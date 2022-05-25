@@ -10,7 +10,7 @@
 <form action ="add_user.php" = "post">
 Firstname: <input type="text" name="firstname" required><br>
 Lastname : <input type="text" name="lastname" required><br>
-E-mail   : <input type="text" id="email" name="email" pattern=".@gmail.com" required><br>
+E-mail   : <input type="text" id="email" name="email" pattern=".+@gmail\.com" required><br>
 Password : <input type="text" name="password" 
 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 title="Must contain at least one number and one uppercase and lowercase letter, and at least between 6 or 8 characters 
