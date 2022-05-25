@@ -10,8 +10,11 @@
 <form action ="add_user.php" = "post">
 Firstname: <input type="text" name="firstname" required><br>
 Lastname : <input type="text" name="lastname" required><br>
-E-mail   : <input type="text" name="email" required><br>
-Password : <input type="text" name="password" required><br>
+E-mail   : <input type="text" id="email" name="email" pattern=".+@globex\.com" required><br>
+Password : <input type="text" name="password" 
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+title="Must contain at least one number and one uppercase and lowercase letter, and at least between 6 or 8 characters 
+required><br>
 Registration date : <input type="date" name="reg_date" required><br>
 <input type="submit" value="Submit Data">
 </form>
